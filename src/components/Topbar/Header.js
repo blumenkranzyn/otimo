@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react"
 import withStyles from '@material-ui/styles/withStyles';
-import { Grid, Typography, Toolbar, AppBar, Tabs, Tab, IconButton, List, ListItem, ListItemText, SwipeableDrawer } from '@material-ui/core';
+import { Grid, Typography, Toolbar, AppBar, IconButton, List, ListItem, ListItemText, SwipeableDrawer } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Link as MaterialLink } from '@material-ui/core'
 import Menu from './Menu';
-import {Slide} from "react-reveal"
+import { Slide } from "react-reveal"
 
 const styles = theme => ({
   appBar: {
@@ -67,10 +67,7 @@ const Header = (props) => {
   const { classes } = props
   console.log(props)
   const [menuDrawer, setMenuDrawer] = useState(false)
-  const [value, setValue] = useState(0)
-  const handleChange = (event, value) => {
-    setValue(value)
-  };
+
   const mobileMenuOpen = (event) => {
     setMenuDrawer(true)
   }
@@ -113,17 +110,17 @@ const Header = (props) => {
                       ))}
                     </List>
                   </SwipeableDrawer>
-                 <div className="navbar-effects conts">
+                  <div className="navbar-effects conts">
                     {Menu.map((item, index) => (
                       <a href={item.pathname}>{item.label}</a>
                     ))}
-                 </div>
+                  </div>
                 </div>
               </React.Fragment>
             </Grid>
           </Grid>
         </Toolbar>
-      </AppBar>  
+      </AppBar>
     </Slide>
   )
 }

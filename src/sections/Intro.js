@@ -1,5 +1,5 @@
 import React from "react"
-import {Grid, Typography, Hidden} from "@material-ui/core"
+import {Grid, Hidden} from "@material-ui/core"
 import {Slide, Fade} from "react-reveal"
 import {Phone, ExpandMore} from '@material-ui/icons/';
 
@@ -40,9 +40,7 @@ const Intro = () => {
                             </svg>
                         </div>
                     </div>
-                </div>
-           
-       <div className="intro-description">
+                    <div className="intro-description">
            <Grid item>
                <Fade left delay={2200}>
                 <h1 className="first-title">
@@ -79,6 +77,10 @@ const Intro = () => {
            <Grid item xs={3} />
         </Hidden>
         </div>
+        
+                </div>
+           
+    
         </>
     )
 }
