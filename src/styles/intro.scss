@@ -1,95 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Quicksand:500,700&display=swap");
-
-$blue-base: #327a93;
-$blue-light: #89b8c8;
-$blue-dark: #164154;
-$gray-base: #f5f5f5;
-
-$breakExtraSmall: 580px;
-$breakSmall: 768px;
-$breakMedium: 1024px;
-
-@mixin intro-fullscreen {
-  width: 100%;
-  @media screen and (min-width: $breakMedium) {
-    height: calc(100vh - 85px);
-  }
-}
-
-body,
-html {
-  margin: 0;
-  font-family: "Quicksand", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-}
-
-.intro-fullscreen {
-  @include intro-fullscreen();
-}
-
-/*menu*/
-.navbar-effects {
-  max-height: 85px;
-  height: 85px;
-  margin: 0 auto;
-  padding: 1.9em 3em;
-  text-align: center;
-  a {
-    color: #005d7c;
-    text-decoration: none;
-    font-size: 14px;
-    margin: 0px 20px;
-    padding: 10px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-    font-weight: 900;
-    text-transform: uppercase;
-    &:last-of-type {
-      margin: 0 0 0 20px;
-    }
-    &::after {
-      right: 0px;
-      bottom: 0px;
-    }
-    &::before {
-      left: 0px;
-      top: 0px;
-    }
-    &::before,
-    &::after {
-      position: absolute;
-      opacity: 0;
-      width: 0%;
-      height: 1px;
-      content: "";
-      background: #005d7c;
-      transition: all 0.3s;
-    }
-    &:hover {
-      &::before {
-        opacity: 1;
-        width: 100%;
-      }
-      &::after {
-        opacity: 1;
-        width: 100%;
-      }
-    }
-  }
-}
-
-/* Intro */
 .animated-bg {
   width: 100%;
   height: auto;
@@ -106,6 +14,16 @@ h6 {
 
   .anim {
     position: relative;
+    height: auto;
+    .color-correct {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 0;
+      width: 64%;
+      height: 290px;
+      background: linear-gradient(to top, $blue-base 30%, transparent);
+    }
     img {
       width: 100%;
       position: absolute;
@@ -206,29 +124,5 @@ h6 {
         }
       }
     }
-  }
-}
-
-@keyframes dash {
-  0% {
-    stroke-dasharray: 10000;
-    stroke-dashoffset: -10000;
-    fill-opacity: 0;
-  }
-  30% {
-    stroke-dasharray: 10000;
-    stroke-dashoffset: -10000;
-    fill-opacity: 0;
-  }
-  60% {
-    stroke-dashoffset: 10000;
-    fill-opacity: 1;
-  }
-  80% {
-    fill-opacity: 1;
-  }
-  100% {
-    stroke-dashoffset: 10000;
-    fill-opacity: 1;
   }
 }

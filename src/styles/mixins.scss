@@ -1,0 +1,6 @@
+@mixin intro-fullscreen {
+  width: 100%;
+  @media screen and (min-width: $breakMedium) {
+    height: calc(100vh - 85px);
+  }
+}
