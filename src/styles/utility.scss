@@ -1,3 +1,16 @@
 .intro-fullscreen {
   @include intro-fullscreen();
 }
+.separator {
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  height: auto;
+  &::after {
+    @include pseudo;
+    top: -1rem;
+    left: -1rem;
+    width: 1rem;
+    height: 1rem;
+  }
+}

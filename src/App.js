@@ -3,18 +3,19 @@ import { ThemeProvider } from '@material-ui/styles';
 import { createMuiTheme } from '@material-ui/core/styles'
 import Header from "./components/Topbar/Header"
 import Intro from "./sections/Intro"
+import Welcome from "./sections/Welcome"
 
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main : "#005D7C",
+      main: "#005D7C",
       light: "#007B95",
       lighter: "#70B9CA",
       contrastText: "#ffffff"
     },
-    secondary : {
+    secondary: {
       main: "#97999C",
-      light : "#F5F5F5"
+      light: "#F5F5F5"
     }
   },
 });
@@ -22,8 +23,9 @@ const theme = createMuiTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-          <Header />
-          <Intro />
+      <Header />
+      <Intro />
+      <Welcome />
     </ThemeProvider>
   );
 }

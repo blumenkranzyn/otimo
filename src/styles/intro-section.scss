@@ -1,0 +1,131 @@
+.intro-section {
+  width: 100%;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 56%;
+  }
+  .animated-bg {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+
+    .anim {
+      position: relative;
+      height: auto;
+      .color-correct {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+        width: 64%;
+        height: 290px;
+        background: linear-gradient(to top, $blue-base 30%, transparent);
+      }
+      img {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+      }
+      svg {
+        width: 100%;
+        stroke-width: 3px;
+        stroke: rgba(27, 93, 122, 1);
+        stroke-dasharray: 10000;
+        stroke-dashoffset: -10000;
+        fill-opacity: 0;
+      }
+      .layer-dark {
+        fill: url(#MyGradient1);
+        position: absolute;
+        top: 0px;
+        left: 0;
+        z-index: -1;
+        animation: dash 5s ease-in-out forwards;
+      }
+      .layer-light {
+        fill: url(#MyGradient);
+        animation: dash 3s ease-in forwards;
+      }
+    }
+
+    .intro-description {
+      width: auto;
+      position: absolute;
+      top: 35%;
+      left: 5%;
+      h1 {
+        color: white;
+        font-weight: 700;
+      }
+      .first-title {
+        font-size: 4.7em;
+        line-height: 2rem;
+
+        @media screen and (max-width: $breakSmall) {
+          font-size: 2.1em;
+          line-height: 2rem;
+        }
+      }
+      .second-title {
+        font-size: 4.8em;
+        @media screen and (max-width: $breakSmall) {
+          font-size: 2.1em;
+        }
+      }
+      .third-title {
+        font-size: 6.2em;
+        line-height: 3rem;
+
+        @media screen and (max-width: $breakSmall) {
+          font-size: 2.1em;
+        }
+      }
+      .intro-action {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (max-width: $breakSmall) {
+          flex-direction: column;
+        }
+        @media screen and (min-width: $breakSmall) {
+          margin-top: 3em;
+        }
+        a {
+          border-radius: 25px;
+          @media screen and (min-width: $breakSmall) {
+            font-size: 1.1em;
+          }
+          padding: 8px 15px;
+          font-weight: bold;
+          text-transform: uppercase;
+          transition: all ease 0.5s;
+
+          &:nth-child(1) {
+            color: white;
+            border: 1px solid #fff;
+            background-color: $blue-base;
+            &:hover {
+              color: $blue-base;
+              background-color: white;
+            }
+          }
+          &:nth-child(2) {
+            color: $blue-dark;
+            background: #fff;
+
+            &:hover {
+              color: #fff;
+              background-color: $blue-dark;
+              margin-top: -10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

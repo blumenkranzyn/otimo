@@ -7,6 +7,7 @@ const bg = require('../images/bg-header.jpg');
 const Intro = () => {
     return (
         <> 
+        <section className="intro-section">
                 <div className="animated-bg">
                     <div class="anim">
                         <Fade  delay={2800}>
@@ -80,10 +81,8 @@ const Intro = () => {
            <Grid item xs={3} />
         </Hidden>
         </div>
-        
                 </div>
-           
-    
+        </section>
         </>
     )
 }
