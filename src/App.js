@@ -2,6 +2,7 @@ import React from 'react';
 import { ThemeProvider } from '@material-ui/styles';
 import { createMuiTheme } from '@material-ui/core/styles'
 import Header from "./components/Topbar/Header"
+import Intro from "./sections/Intro"
 
 const theme = createMuiTheme({
   palette: {
@@ -22,6 +23,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
           <Header />
+          <Intro />
     </ThemeProvider>
   );
 }

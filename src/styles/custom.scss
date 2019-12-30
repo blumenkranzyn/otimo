@@ -1,7 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Quicksand:500,700&display=swap");
 
-$blue-base: "#005D7C";
-$gray-base: "#F5F5F5";
+
+
+$blue-base: #327a93;
+$blue-light: #89b8c8;
+$blue-dark: #164154;
+$gray-base: #F5F5F5;
+
+$breakExtraSmall: 580px;
+$breakSmall: 768px;
+$breakMedium: 1024px;
+
+@mixin intro-fullscreen {
+  width: 100%;
+  @media screen and (min-width: $breakMedium) {
+  height: calc(100vh - 85px);
+}
+}
 
 body,
 html {
@@ -20,10 +35,16 @@ h6 {
   font-weight: 900;
 }
 
+.intro-fullscreen {
+  @include intro-fullscreen()
+}
+
 /*menu*/
 .navbar-effects {
-    margin: 0 auto;
-    padding: 1.9em 3em;
+  max-height: 85px;
+  height: 85px;
+  margin: 0 auto;
+  padding: 1.9em 3em;
     text-align: center;
     a {
       color: #005D7C;
@@ -68,5 +89,153 @@ h6 {
         }
       }
     }
+    
+  }
   
+  
+  /* Intro */
+  .animated-bg {
+    @include intro-fullscreen();
+    @media screen and (min-width: $breakMedium) {
+     margin-top: 85px;
+    }
+    @media screen and (max-width: $breakMedium) {
+     margin-top: 54px;
+    }
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    
+  
+  .anim {
+    @include intro-fullscreen();
+    position: relative;
+    img {
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+    }
+    svg {
+      width: 100%;
+    stroke-width: 1px;
+    stroke: rgba(27, 93, 122, 1);
+    stroke-dasharray: 10000;
+    stroke-dashoffset: -10000;
+    fill-opacity: 0;
+  }
+  .layer-dark {
+    fill: url(#MyGradient1);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+    animation: dash 5s ease-in-out forwards;
+  }
+  .layer-light {
+    fill: url(#MyGradient);
+    animation: dash 3s ease-in forwards;
+  }
+}
+  }
+
+  .intro-description {
+    @media screen and (min-width: $breakMedium) {
+      @include intro-fullscreen();
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    h1 {
+      color: white;
+      font-weight: 700;
+    }
+    .first-title {
+      font-size: 4.7em;
+      line-height: 2rem;
+      
+      @media screen and (max-width: $breakSmall) {
+        font-size: 2.1em;
+        line-height: 2rem;
+      }
+    }
+    .second-title {
+      font-size: 4.8em;
+      @media screen and (max-width: $breakSmall) {
+        font-size: 2.1em;
+      }
+    }
+    .third-title {
+      font-size: 6.2em;
+      line-height: 3rem;
+
+      @media screen and (max-width: $breakSmall) {
+        font-size: 2.1em;
+      }
+    }
+    .intro-action {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media screen and (max-width: $breakSmall) {
+       flex-direction: column;;
+      }
+      @media screen and (min-width: $breakSmall) {
+      margin-top: 3em;
+      }
+      a {
+        border-radius: 25px;
+        @media screen and (min-width: $breakSmall) {
+          font-size: 1.1em;
+        }
+        padding: 8px 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+         transition: all ease 0.5s;
+
+        &:nth-child(1){
+          color: white;
+          border: 1px solid #fff;
+          background-color: $blue-base;
+          &:hover {
+             color: $blue-base;
+             background-color: white;
+          }
+        }
+        &:nth-child(2){
+          color:$blue-dark;
+          background: #fff;
+          
+          &:hover {
+            color: #fff;
+            background-color: $blue-dark;
+            margin-top: -10px;
+         }
+        }
+      }
+    }
+  }
+@keyframes dash {
+  0% {
+    stroke-dasharray: 10000;
+    stroke-dashoffset: -10000;
+    fill-opacity: 0;
+  }
+  30% {
+    stroke-dasharray: 10000;
+    stroke-dashoffset: -10000;
+    fill-opacity: 0;
+  }
+  60% {
+    stroke-dashoffset: 10000;
+    fill-opacity: 1;
+  }
+  80% {
+    fill-opacity: 1;
+  }
+  100% {
+    stroke-dashoffset:10000;
+    fill-opacity: 1;
+  }
 }
