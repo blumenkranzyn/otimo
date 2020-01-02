@@ -9,6 +9,7 @@ import PayrollLoans from "./sections/PayrollLoans"
 import Compliance from "./sections/Compliance"
 import FinancialKnowledge from "./sections/FinancialKnowledge"
 import Courses from "./sections/Courses"
+import CTA from "./sections/CTA"
 
 const theme = createMuiTheme({
   palette: {
@@ -36,6 +37,7 @@ function App() {
       <Compliance />
       <FinancialKnowledge />
       <Courses />
+      <CTA />
     </ThemeProvider>
   );
 }

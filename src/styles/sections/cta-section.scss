@@ -1,0 +1,29 @@
+.cta-section {
+  padding: 60px 1% 200px 10%;
+  margin-bottom: 10%;
+  background: url(../../images/bgs/bg-fraudes.jpg) top center no-repeat;
+  background-color: $blue-base;
+  color: white;
+  & > * {
+    text-transform: uppercase;
+    color: white;
+  }
+  h4 {
+    font-size: 50px;
+  }
+  a {
+    @include base-button;
+    margin-left: 0;
+    font-size: 20px;
+    padding: 10px 35px;
+    background: $blue-base;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  p {
+    font-size: 30px;
+    margin: 30px 0;
+    line-height: 1;
+  }
+}

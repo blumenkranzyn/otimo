@@ -37,3 +37,16 @@
   background-position: top center;
   background-repeat: no-repeat;
 }
+
+@mixin base-button {
+  border-radius: 20px;
+  padding: 8px 20px;
+  margin: 0 10px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  &:nth-child(1) {
+    margin-left: 0;
+  }
+}
