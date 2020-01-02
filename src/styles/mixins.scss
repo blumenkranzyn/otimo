@@ -32,3 +32,8 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin full-bg {
+  background-position: top center;
+  background-repeat: no-repeat;
+}

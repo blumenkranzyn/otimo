@@ -1,12 +1,10 @@
 .knowledge-section {
-  padding: 15vh 0 30vh calc(10%);
-  background: url(../../images/bgs/bg-conhecimento-financeiro.jpg) bottom center no-repeat;
-
-  background-color: $blue-dark;
+  padding: 15vh 0 20vh calc(10%);
+  margin-bottom: 20vh;
+  background: url(../../images/bgs/bg-conhecimento-financeiro.png),
+    linear-gradient(to right, $blue-dark, #0c394f, #0f425b 70%);
+  @include full-bg;
   color: $blue-dark;
-  > * {
-    color: white;
-  }
   h2 {
     line-height: 1.1em;
     margin-bottom: 30px;
@@ -23,9 +21,24 @@
     width: 100%;
     max-width: 490px;
     margin-top: 40px;
-    > * {
-      font-size: 20px;
-      font-weight: 600;
-    }
+  }
+  &::after {
+    @include pseudo;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 50px 100vw;
+    transform: rotateX(180deg);
+    border-color: transparent transparent $blue-dark transparent;
+  }
+  > * {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  @include mq("desktop", "max") {
+    padding: 15vh 0 8vh calc(10%);
   }
 }

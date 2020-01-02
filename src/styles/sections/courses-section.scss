@@ -1,0 +1,61 @@
+.courses-section {
+  padding: 0 10%;
+  background: url(../../images/bgs/bg-cursos.jpg);
+  @include full-bg;
+  h2 {
+    margin-bottom: 5%;
+  }
+  p {
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .card-course {
+    margin-bottom: 30px;
+    text-align: left;
+    img {
+      margin: auto;
+    }
+    p {
+      font-weight: 700;
+      font-size: 30px;
+      color: $blue-dark;
+      line-height: 28px;
+      margin-bottom: 10px;
+    }
+    .description {
+      line-height: 18px;
+      font-size: 15px;
+      font-weight: 400;
+      color: $gray-text;
+    }
+    .actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      a {
+        border-radius: 10px;
+        padding: 8px 10px;
+        margin: 0 10px;
+        color: white;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 14px;
+        &:hover {
+          cursor: pointer;
+        }
+        &:nth-child(1) {
+          margin-left: 0;
+          background: $blue-dark;
+        }
+        &:nth-child(2) {
+          background: $blue-base;
+        }
+      }
+      span {
+        color: $blue-dark;
+        font-weight: 700;
+        font-size: 20px;
+      }
+    }
+  }
+}
