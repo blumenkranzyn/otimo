@@ -3,17 +3,17 @@
 }
 .separator {
   position: absolute;
-  bottom: -50px;
-  width: 100%;
-  height: auto;
-  &::after {
-    @include pseudo;
-    top: -1rem;
-    left: -1rem;
-    width: 1rem;
-    height: 1rem;
-  }
+  top: 100%;
 }
 .text-blue-dark {
   color: $blue-dark;
+}
+.text-blue-base {
+  color: $blue-base;
+}
+.text-blue-light {
+  color: $blue-light;
+}
+.text-gray-text {
+  color: $gray-text;
 }

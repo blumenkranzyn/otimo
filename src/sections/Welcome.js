@@ -3,7 +3,7 @@ import { Grid, Hidden, Card } from "@material-ui/core"
 import { Fade } from "react-reveal"
 
 const images = {
-    separator: require('../images/bg-transicao.png'),
+    separator: require('../images/bgs/bg-transicao.png'),
     phone: require('../images/celular-tech.png'),
     bancoCentralLogo: require('../images/banco-central-do-brasil-logo-4.png')
 }

@@ -1,0 +1,17 @@
+.payroll-section {
+  padding: 80px 0;
+  background: url(../../images/bgs/bg-credito-consignado.jpg) top center no-repeat;
+  color: $blue-dark;
+  h4 {
+    font-size: 23px;
+  }
+  .list {
+    width: 100%;
+    max-width: 490px;
+    margin-top: 40px;
+    > * {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+}

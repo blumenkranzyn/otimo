@@ -4,6 +4,9 @@ import { createMuiTheme } from '@material-ui/core/styles'
 import Header from "./components/Topbar/Header"
 import Intro from "./sections/Intro"
 import Welcome from "./sections/Welcome"
+import Services from "./sections/Services"
+import PayrollLoans from "./sections/PayrollLoans"
+import Compliance from "./sections/Compliance"
 
 const theme = createMuiTheme({
   palette: {
@@ -26,6 +29,9 @@ function App() {
       <Header />
       <Intro />
       <Welcome />
+      <Services />
+      <PayrollLoans />
+      <Compliance />
     </ThemeProvider>
   );
 }

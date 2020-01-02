@@ -3,7 +3,7 @@ import {Grid, Hidden} from "@material-ui/core"
 import { Fade} from "react-reveal"
 import {Phone, ExpandMore} from '@material-ui/icons/';
 
-const bg = require('../images/bg-header.jpg');
+const bg = require('../images/bgs/bg-header.jpg');
 const Intro = () => {
     return (
         <> 
@@ -45,7 +45,8 @@ const Intro = () => {
                         </div>
                     </div>
                     <div className="intro-description">
-           <Grid item>
+                    <Grid container direction="row" alignItems="center" justify="center">
+                    <Grid item>
                <Fade left delay={2200}>
                 <h1 className="first-title">
                     EMPRÉSTIMO
@@ -77,10 +78,8 @@ const Intro = () => {
                 </Fade>
                </div>
            </Grid>
-        <Hidden smDown>
-           <Grid item xs={3} />
-        </Hidden>
-        </div>
+           </Grid>
+                    </div>
                 </div>
         </section>
         </>
