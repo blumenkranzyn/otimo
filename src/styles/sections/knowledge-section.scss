@@ -1,0 +1,31 @@
+.knowledge-section {
+  padding: 15vh 0 30vh calc(10%);
+  background: url(../../images/bgs/bg-conhecimento-financeiro.jpg) bottom center no-repeat;
+
+  background-color: $blue-dark;
+  color: $blue-dark;
+  > * {
+    color: white;
+  }
+  h2 {
+    line-height: 1.1em;
+    margin-bottom: 30px;
+    max-width: 250px;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 22px;
+    margin-top: 30px;
+  }
+  .list {
+    width: 100%;
+    max-width: 490px;
+    margin-top: 40px;
+    > * {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+}
