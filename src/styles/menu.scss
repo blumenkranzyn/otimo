@@ -2,9 +2,10 @@
   max-height: 85px;
   height: 85px;
   margin: 0 auto;
-  padding: 1.9em 3em;
+  padding: 1.9em 3em 1.3em 3em;
   text-align: center;
-  a {
+  display: flex;
+  .anchors {
     color: #005d7c;
     text-decoration: none;
     font-size: 14px;

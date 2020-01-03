@@ -13,7 +13,7 @@ const images = {
 const Footer = () => {
     return (
         <>
-            <section className="footer-section w-full relative">
+            <section className="footer-section">
                 <Grid container direction="row" alignItems="center" justify="space-between">
                     <Grid item>
                         <img src={images.logoOtimo} alt="Otimo - Sociedade de Crédito Direto" />

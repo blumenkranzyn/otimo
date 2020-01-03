@@ -1,11 +1,14 @@
 .knowledge-section {
-  padding: 15vh 0 20vh 10%;
-  margin-bottom: 20vh;
-  background: url(../../images/bgs/bg-conhecimento-financeiro.png),
-    linear-gradient(to right, $blue-dark, #0c394f, #0f425b 70%);
-  @include full-bg;
+  z-index: 2;
+  position: relative;
+  padding-top: 11vh;
+  padding-bottom: 20vh;
+  background: url(../../images/bgs/bg-conhecimento-financeiro01.jpg);
   background-position: center center;
-  background-size: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+
   color: $blue-dark;
   h2 {
     line-height: 1.1em;
@@ -25,17 +28,6 @@
     margin-top: 40px;
   }
 
-  &::after {
-    @include pseudo;
-    top: 80%;
-    left: 0;
-    width: 101%;
-    z-index: -2;
-    height: 175px;
-    background: linear-gradient(to right, $blue-dark, #0c394f, #10425c 70%);
-    transform: rotate(3deg);
-    transform-origin: 0 0;
-  }
   > * {
     color: white;
     font-size: 20px;

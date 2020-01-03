@@ -1,9 +1,14 @@
 .cta-section {
-  padding: 60px 1% 200px 10%;
-  margin-bottom: 5%;
+  z-index: 2;
+  position: relative;
+  padding-top: 15vh;
+  padding-bottom: 25vh;
   background: url(../../images/bgs/bg-fraudes.jpg);
-  background-position: bottom center;
+  background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
   color: white;
   & > * {
     text-transform: uppercase;

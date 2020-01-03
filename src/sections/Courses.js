@@ -19,7 +19,7 @@ const images = {
 const Courses = ({ classes }) => {
     return (
         <>
-            <section className="courses-section w-full relative">
+            <section className="courses-section">
                 <Grid container direction="column" alignItems="center" justify="flex-start">
                     <Grid item className="text-center">
                         <h2 className="text-blue-base">CURSOS GRATUITOS</h2>

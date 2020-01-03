@@ -69,3 +69,16 @@
 .btn-blue-dark {
   @include colored-button(0, $blue-dark, #fff);
 }
+
+section {
+  width: 100%;
+  position: relative;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.go-top {
+  position: fixed !important;
+  bottom: 2vh;
+  right: 2vh;
+  z-index: 9999;
+}

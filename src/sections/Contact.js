@@ -16,7 +16,7 @@ const Contact = () => {
 
     return (
         <>
-            <section className="contact-section w-full relative">
+            <section className="contact-section" id="contact">
                 <Grid container direction="row" alignItems="center" justify="flex-start">
                     <Grid item xs={12} md={6} lg={6}>
                         <h2 className="text-blue-dark">FALE CONOSCO</h2>

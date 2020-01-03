@@ -19,7 +19,7 @@ const images = {
 const FinancialKnowledge = ({ classes }) => {
     return (
         <>
-            <section className="knowledge-section w-full relative">
+            <section className="knowledge-section">
                 <Grid container direction="row" alignItems="center" justify="flex-start">
                     <Grid item md={7} lg={6}>
                         <h2 className="text-blue-base">CONHECIMENTO FINANCEIRO</h2>

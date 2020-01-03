@@ -20,11 +20,8 @@ const images = {
 const Compliance = ({ classes }) => {
     return (
         <>
-            <section className="compliance-section w-full relative">
-                <Grid container direction="row" alignItems="center" justify="center">
-                    <Hidden smDown>
-                        <Grid item md={5} />
-                    </Hidden>
+            <section className="compliance-section" id="compliance">
+                <Grid container direction="row" alignItems="center" justify="flex-end">
                     <Grid item md={6} xs={12}>
                         <h2 className="text-gray-text">COMPLIANCE</h2>
                         <h4 className="text-blue-dark">NOSSAS NORMAS GARANTEM PROFISSIONALISMO E SEGURANÇA PARA NOSSOS CLIENTES</h4>

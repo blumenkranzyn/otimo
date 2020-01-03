@@ -1,6 +1,9 @@
 .payroll-section {
-  padding: 80px 0;
-  background: url(../../images/bgs/bg-credito-consignado.jpg) top center no-repeat;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: url(../../images/bgs/bg-credito-consignado.jpg) center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   color: $blue-dark;
   h4 {
     font-size: 23px;
@@ -12,6 +15,12 @@
     > * {
       font-size: 20px;
       font-weight: 600;
+    }
+  }
+  nav > div {
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      transform: translateX(10%);
     }
   }
 }

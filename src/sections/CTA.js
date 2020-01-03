@@ -20,7 +20,7 @@ const images = {
 const CTA = ({ classes }) => {
     return (
         <>
-            <section className="cta-section w-full relative">
+            <section className="cta-section">
                 <Grid container direction="row" alignItems="center" justify="center">
                     <Hidden smDown>
                         <Grid item md={5} />

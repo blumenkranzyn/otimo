@@ -11,8 +11,8 @@ const images = {
 const Welcome = () => {
     return (
         <>
-            <section className="welcome-section w-full relative">
-                <Grid container direction="row" justify="center" alignItems="center">
+            <section className="welcome-section" id="about">
+                <Grid container direction="row" justify="space-between" alignItems="center">
                     <Grid item>
                         <img src={images.phone} alt="phone" />
                     </Grid>

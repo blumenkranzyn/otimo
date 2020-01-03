@@ -3,6 +3,7 @@ import withStyles from '@material-ui/styles/withStyles';
 import { Grid, Typography, Toolbar, AppBar, IconButton, List, ListItem, ListItemText, SwipeableDrawer } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Link as MaterialLink } from '@material-ui/core'
+import ScrollIntoView from 'react-scroll-into-view'
 import Menu from './Menu';
 
 
@@ -80,47 +81,54 @@ const Header = (props) => {
   }, [])
 
   return (
+    <>
 
-    <AppBar position="fixed" color="default" className={`${classes.appBar} bg-gray-100 shadow-md`}>
-      <Toolbar>
-        <Grid container spacing={24} alignItems="baseline">
-          <Grid item xs={12} className={classes.flex}>
-            <div className={classes.inline}>
-              <Typography variant="h6" color="inherit" noWrap>
-                <a href='/' className={classes.link}>
-                  <img width={120} src={logo} alt="" />
-                </a>
-              </Typography>
-            </div>
-            <React.Fragment>
-              <div className={classes.iconContainer}>
-                <IconButton onClick={mobileMenuOpen} className={classes.iconButton} color="inherit" aria-label="Menu">
-                  <MenuIcon />
-                </IconButton>
+      <AppBar position="fixed" color="default" className={`${classes.appBar} bg-gray-100 shadow-md`}>
+        <Toolbar>
+          <Grid container spacing={24} alignItems="baseline">
+            <Grid item xs={12} className={classes.flex}>
+              <div className={classes.inline}>
+                <Typography variant="h6" color="inherit" noWrap>
+                  <ScrollIntoView selector="#intro" alignToTop className={` ${classes.link} cursor-pointer`}>
+                    <img width={120} src={logo} alt="" />
+                  </ScrollIntoView>
+
+                </Typography>
               </div>
-              <div className={classes.tabContainer}>
-                <SwipeableDrawer anchor="right" open={menuDrawer} onClose={mobileMenuClose} onOpen={mobileMenuOpen}>
-                  <AppBar title="Menu" />
-                  <List>
-                    {Menu.map((item, index) => (
-                      <ListItem component={MaterialLink} href={item.external ? item.pathname : null} to={item.external ? null : { pathname: item.pathname }} button key={item.label}>
-                        <ListItemText primary={item.label} />
-                      </ListItem>
-                    ))}
-                  </List>
-                </SwipeableDrawer>
-                <div className="navbar-effects conts">
-                  {Menu.map((item, index) => (
-                    <a href={item.pathname}>{item.label}</a>
-                  ))}
+              <React.Fragment>
+                <div className={classes.iconContainer}>
+                  <IconButton onClick={mobileMenuOpen} className={classes.iconButton} color="inherit" aria-label="Menu">
+                    <MenuIcon />
+                  </IconButton>
                 </div>
-              </div>
-            </React.Fragment>
+                <div className={classes.tabContainer}>
+                  <SwipeableDrawer anchor="right" open={menuDrawer} onClose={mobileMenuClose} onOpen={mobileMenuOpen}>
+                    <AppBar title="Menu" />
+                    <List>
+                      {Menu.map((item, index) => (
+                        <ScrollIntoView selector={item.pathname} alignToTop >
+                          <ListItem button key={item.label}>
+                            <ListItemText primary={item.label} />
+                          </ListItem>
+                        </ScrollIntoView>
+                      ))}
+                    </List>
+                  </SwipeableDrawer>
+                  <div className="navbar-effects conts">
+                    {Menu.map((item, index) => (
+                      <ScrollIntoView selector={item.pathname} alignToTop className="anchors">
+                        {item.label}
+                      </ScrollIntoView>
+                    ))}
+                  </div>
+                </div>
+              </React.Fragment>
+            </Grid>
           </Grid>
-        </Grid>
-      </Toolbar>
-    </AppBar>
+        </Toolbar>
+      </AppBar>
 
+    </>
   )
 }
 

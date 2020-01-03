@@ -5,7 +5,7 @@
   &::before {
     content: "";
     display: block;
-    padding-top: 56%;
+    padding-top: 65%;
     z-index: -60;
   }
   .animated-bg {
@@ -24,9 +24,9 @@
         bottom: 0;
         right: 0;
         z-index: 0;
-        width: 64%;
+        width: 70%;
         height: 290px;
-        background: linear-gradient(to top, $blue-base 30%, transparent);
+        background: linear-gradient(to top, #297a94 30%, transparent);
       }
       img {
         width: 100%;
@@ -126,7 +126,6 @@
             &:hover {
               color: #fff;
               background-color: $blue-dark;
-              margin-top: -10px;
             }
           }
         }

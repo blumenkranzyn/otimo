@@ -19,8 +19,8 @@ const images = {
 const PayrollLoans = ({ classes }) => {
     return (
         <>
-            <section className="payroll-section w-full relative">
-                <Grid container direction="row" alignItems="center" justify="center">
+            <section className="payroll-section">
+                <Grid container direction="row" alignItems="center" justify="flex-start">
                     <Grid item>
                         <h2 className="text-blue-base">CRÉDITO CONSIGNADO</h2>
                         <h4 className="text-blue-dark">O melhor benefício para o seu colaborador</h4>
@@ -48,9 +48,7 @@ const PayrollLoans = ({ classes }) => {
                             </List>
                         </div>
                     </Grid>
-                    <Hidden smDown>
-                        <Grid item md={3} />
-                    </Hidden>
+
                 </Grid>
             </section>
         </>

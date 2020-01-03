@@ -2,12 +2,13 @@ import React from "react"
 import {Grid, Hidden} from "@material-ui/core"
 import { Fade} from "react-reveal"
 import {Phone, ExpandMore} from '@material-ui/icons/';
+import ScrollIntoView from 'react-scroll-into-view'
 
 const bg = require('../images/bgs/bg-header.jpg');
 const Intro = () => {
     return (
         <> 
-        <section className="intro-section">
+        <section className="intro-section" >
                 <div className="animated-bg">
                     <div class="anim">
                         <Fade  delay={2800}>
@@ -73,10 +74,12 @@ const Intro = () => {
                 </a>
                 </Fade>
                 <Fade bottom delay={3200}>
-                <a href="#home-section">
-                    <ExpandMore className="mr-4"/>
-                    Saiba Mais
-                </a>
+                <ScrollIntoView selector="#about" alignToTop>
+                    <a className="btn btn-blue-dark text-3xl cursor-pointer">
+                        <ExpandMore className="mr-4"/>
+                        Saiba Mais
+                    </a>    
+                </ScrollIntoView> 
                 </Fade>
                </div>
            </Grid>

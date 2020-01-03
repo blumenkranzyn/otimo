@@ -1,6 +1,8 @@
 .compliance-section {
-  padding: 80px 0;
-  background: url(../../images/bgs/bg-compliance.jpg) top center no-repeat;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: url(../../images/bgs/bg-compliance.jpg) center center no-repeat;
+  background-attachment: fixed;
   color: $blue-dark;
   h4 {
     font-size: 20px;
@@ -16,6 +18,10 @@
       color: $gray-text;
       padding: 10px 0;
       border-bottom: 1px solid $gray-text;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }

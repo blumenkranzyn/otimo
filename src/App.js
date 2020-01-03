@@ -3,6 +3,7 @@ import { ThemeProvider } from '@material-ui/styles';
 import { createMuiTheme } from '@material-ui/core/styles'
 import "normalize.css";
 import Header from "./components/Topbar/Header"
+import ScrollButton from "./components/ScrollButton"
 import Intro from "./sections/Intro"
 import Welcome from "./sections/Welcome"
 import Services from "./sections/Services"
@@ -43,6 +44,7 @@ function App() {
       <CTA />
       <Contact />
       <Footer />
+      <ScrollButton scrollStepInPx="0" delayInMs="16.66" />
     </ThemeProvider>
   );
 }
