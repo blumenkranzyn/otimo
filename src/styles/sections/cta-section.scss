@@ -1,8 +1,9 @@
 .cta-section {
   padding: 60px 1% 200px 10%;
-  margin-bottom: 10%;
-  background: url(../../images/bgs/bg-fraudes.jpg) top center no-repeat;
-  background-color: $blue-base;
+  margin-bottom: 5%;
+  background: url(../../images/bgs/bg-fraudes.jpg);
+  background-position: bottom center;
+  background-size: cover;
   color: white;
   & > * {
     text-transform: uppercase;
@@ -12,7 +13,6 @@
     font-size: 50px;
   }
   a {
-    @include base-button;
     margin-left: 0;
     font-size: 20px;
     padding: 10px 35px;

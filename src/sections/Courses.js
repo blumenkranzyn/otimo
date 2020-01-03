@@ -49,8 +49,8 @@ const Courses = ({ classes }) => {
                                         Devo comprar à vista ou no crédito?, O consumo me faz feliz?
                                     </Typography>
                                     <div className="actions">
-                                        <a href="">Se inscrever</a>
-                                        <a href="">Ver Mais</a>
+                                        <a href="https://www.google.com" target="_blank" rel='noopener noreferrer' className="btn btn-blue-dark">Se inscrever</a>
+                                        <a href="https://www.google.com" target="_blank" rel='noopener noreferrer' className="btn btn-blue-base">Ver Mais</a>
                                         <span><AccessTime /> 2h</span>
                                     </div>
                                 </Grid>
@@ -76,8 +76,8 @@ const Courses = ({ classes }) => {
                                         Saba também através deste curso como o Brasil atua contra esta prática.
                                     </Typography>
                                     <div className="actions">
-                                        <a href="">Se inscrever</a>
-                                        <a href="">Ver Mais</a>
+                                        <a href="https://www.google.com" target="_blank" rel='noopener noreferrer' className="btn btn-blue-dark">Se inscrever</a>
+                                        <a href="https://www.google.com" target="_blank" rel='noopener noreferrer' className="btn btn-blue-base">Ver Mais</a>
                                         <span><AccessTime /> 2h</span>
                                     </div>
                                 </Grid>

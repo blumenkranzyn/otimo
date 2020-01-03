@@ -34,7 +34,7 @@ const CTA = ({ classes }) => {
                         <Typography variant={"h6"} component={"p"}>
                             acesse a faq do banco centra e saiba como se proteger das fraudes.
                       </Typography>
-                        <a href="#">acessar faq</a>
+                        <a href="#" className="btn btn-blue-base text-2xl">acessar faq</a>
                     </Grid>
 
                 </Grid>
