@@ -5,6 +5,13 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $gray-text;
+  & > * {
+    max-width: 100%;
+  }
+  max-width: 100%;
+  width: 100%;
+}
+body {
   overflow-x: hidden;
 }
 h1,

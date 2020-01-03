@@ -24,14 +24,14 @@
   }
   &::after {
     @include pseudo;
-    top: 100%;
+    top: 90%;
     left: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 0 50px 100vw;
-    transform: rotateX(180deg);
-    border-color: transparent transparent $blue-dark transparent;
+    width: 102%;
+    z-index: -2;
+    height: 75px;
+    background: linear-gradient(to right, $blue-dark, #0c394f, #10425c 70%);
+    transform: rotate(3deg);
+    transform-origin: 0 0;
   }
   > * {
     color: white;

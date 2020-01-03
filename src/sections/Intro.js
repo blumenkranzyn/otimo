@@ -12,6 +12,8 @@ const Intro = () => {
                     <div class="anim">
                         <Fade  delay={2800}>
                             <div className="color-correct " />
+                        </Fade>
+                            <Fade  delay={200}>
                             <img src={bg} alt="bg" />
                         </Fade>
                         <div>

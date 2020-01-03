@@ -6,6 +6,7 @@
     content: "";
     display: block;
     padding-top: 56%;
+    z-index: -60;
   }
   .animated-bg {
     width: 100%;
@@ -13,11 +14,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -3;
 
     .anim {
       position: relative;
       height: auto;
+      z-index: -26;
       .color-correct {
         position: absolute;
         bottom: 0;
@@ -55,6 +56,7 @@
     }
 
     .intro-description {
+      z-index: 5;
       width: auto;
       position: absolute;
       top: 35%;
@@ -65,24 +67,26 @@
       }
       .first-title {
         font-size: 4.7em;
-        line-height: 2rem;
-
-        @media screen and (max-width: $breakSmall) {
+        line-height: 3rem;
+        margin: 0;
+        @include mq("tablet", "max") {
           font-size: 2.1em;
           line-height: 2rem;
         }
       }
       .second-title {
         font-size: 4.8em;
-        @media screen and (max-width: $breakSmall) {
+        margin: 0;
+        line-height: 8rem;
+        @include mq("tablet", "max") {
           font-size: 2.1em;
         }
       }
       .third-title {
         font-size: 6.2em;
         line-height: 3rem;
-
-        @media screen and (max-width: $breakSmall) {
+        margin: 0;
+        @include mq("tablet", "max") {
           font-size: 2.1em;
         }
       }
@@ -90,15 +94,15 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        @media screen and (max-width: $breakSmall) {
+        @include mq("tablet", "max") {
           flex-direction: column;
         }
-        @media screen and (min-width: $breakSmall) {
+        @include mq("tablet") {
           margin-top: 3em;
         }
         a {
           border-radius: 25px;
-          @media screen and (min-width: $breakSmall) {
+          @include mq("tablet") {
             font-size: 1.1em;
           }
           padding: 8px 15px;

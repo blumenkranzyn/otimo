@@ -1,6 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from '@material-ui/styles';
 import { createMuiTheme } from '@material-ui/core/styles'
+import "normalize.css";
 import Header from "./components/Topbar/Header"
 import Intro from "./sections/Intro"
 import Welcome from "./sections/Welcome"
@@ -10,6 +11,7 @@ import Compliance from "./sections/Compliance"
 import FinancialKnowledge from "./sections/FinancialKnowledge"
 import Courses from "./sections/Courses"
 import CTA from "./sections/CTA"
+import Contact from "./sections/Contact"
 
 const theme = createMuiTheme({
   palette: {
@@ -38,6 +40,7 @@ function App() {
       <FinancialKnowledge />
       <Courses />
       <CTA />
+      <Contact />
     </ThemeProvider>
   );
 }
