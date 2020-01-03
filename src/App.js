@@ -12,6 +12,7 @@ import FinancialKnowledge from "./sections/FinancialKnowledge"
 import Courses from "./sections/Courses"
 import CTA from "./sections/CTA"
 import Contact from "./sections/Contact"
+import Footer from "./sections/Footer"
 
 const theme = createMuiTheme({
   palette: {
@@ -41,6 +42,7 @@ function App() {
       <Courses />
       <CTA />
       <Contact />
+      <Footer />
     </ThemeProvider>
   );
 }
