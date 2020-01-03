@@ -8,7 +8,8 @@ const styles = theme => ({
         paddingLeft: 10
     },
     img: {
-        maxWidth: 40
+        width: 40,
+        height: 40,
     }
 })
 

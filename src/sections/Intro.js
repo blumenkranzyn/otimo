@@ -9,11 +9,9 @@ const Intro = () => {
     return (
         <> 
         <section className="intro-section" >
+                <div className="color-correct " />
                 <div className="animated-bg">
                     <div class="anim">
-                        <Fade  delay={2800}>
-                            <div className="color-correct " />
-                        </Fade>
                             <Fade  delay={200}>
                             <img src={bg} alt="bg" />
                         </Fade>
@@ -32,7 +30,7 @@ const Intro = () => {
                         </div>
                         <div>
                             <svg version="1.1" className="layer-dark" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-                                viewBox="0 0 1920 1080" style={{enableBackground:"new 0 0 1920 1080;"}} >
+                                viewBox="0 0 1920 1080" enable-background="new 0 0 1920 1080" >
                                 <g>
                                     <defs>
                                         <linearGradient id="MyGradient1"  gradientTransform="rotate(-10)">
@@ -48,7 +46,7 @@ const Intro = () => {
                         </div>
                     </div>
                     <div className="intro-description">
-                    <Grid container direction="row" alignItems="center" justify="center">
+                    <Grid container direction="row" alignItems="center" justify="flex-start">
                     <Grid item>
                <Fade left delay={2200}>
                 <h1 className="first-title">
