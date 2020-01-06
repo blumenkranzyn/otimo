@@ -43,7 +43,7 @@ const Courses = ({ classes }) => {
                         <Fade bottom delay={700}>
                             <Card className="card-course">
                                 <Grid container alignItems="center" justify="center">
-                                    <Grid item md={4} xs={12}>
+                                    <Grid item md={4} xs={12} className="text-left">
                                         <img src={images.consciencia} alt="" />
                                     </Grid>
                                     <Grid item md={8} xs={12} className="p-8">
@@ -69,8 +69,8 @@ const Courses = ({ classes }) => {
                     <Grid item>
                         <Fade bottom delay={700}>
                             <Card className="card-course">
-                                <Grid container alignItems="center" justify="center">
-                                    <Grid item md={4} xs={12}>
+                                <Grid container alignItems="center" justify="flex-start">
+                                    <Grid item md={4} xs={12} className="text-left">
                                         <img src={images.lavagem} alt="" />
                                     </Grid>
                                     <Grid item md={8} xs={12} className="p-8">

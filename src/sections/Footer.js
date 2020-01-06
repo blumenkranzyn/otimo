@@ -14,7 +14,7 @@ const Footer = () => {
     return (
         <>
             <section className="footer-section">
-                <Grid container direction="row" alignItems="center" justify="space-between">
+                <Grid container direction="row" alignItems="center" justify="space-between" className="xs-center" spacing={3}>
                     <Grid item>
                         <Zoom left delay={900}>
                             <img src={images.logoOtimo} alt="Otimo - Sociedade de Crédito Direto" />

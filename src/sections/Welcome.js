@@ -13,12 +13,12 @@ const Welcome = () => {
         <>
             <section className="welcome-section" id="about">
                 <Grid container direction="row" justify="space-between" alignItems="center">
-                    <Grid item>
+                    <Grid item sm={3} md={6}>
                         <Rotate delay={300}>
                             <img src={images.phone} alt="phone" />
                         </Rotate>
                     </Grid>
-                    <Grid item className="description" md={6}>
+                    <Grid item className="description" sm={9} md={6}>
                         <Zoom delay={300}>
                             <h2 className="text-blue-dark">NÓS SOMOS A <span className="text-white">ÓTIMO SDC</span></h2>
                             <p>Uma plataforma 100% online, sem burocracia e sem taxas abusivas, com um time de especialistas em diversas areas para possibilitar que mais pessoas tenham o crédito facilitado e justo.</p>

@@ -1,14 +1,17 @@
 * {
+  box-sizing: border-box;
   outline: none !important;
 }
 body,
 html {
+  position: relative;
   margin: 0;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $gray-text;
   & > * {
+    user-select: none;
     max-width: 100%;
   }
   max-width: 100%;
@@ -16,6 +19,10 @@ html {
 }
 body {
   overflow-x: hidden;
+  font-size: 15px;
+  @include mq("tablet-wide", "max") {
+    font-size: 13px;
+  }
 }
 h1,
 h2,
@@ -27,6 +34,7 @@ h6 {
   font-weight: 600;
   text-transform: uppercase;
 }
+
 h2 {
   font-size: 2.8em;
 }

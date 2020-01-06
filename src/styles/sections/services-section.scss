@@ -5,6 +5,9 @@
   color: $blue-dark;
   .cards {
     margin-top: 20px;
+    @include mq("tablet", "max") {
+      justify-content: center;
+    }
     .card {
       z-index: 1;
       position: relative;

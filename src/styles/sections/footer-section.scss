@@ -1,7 +1,10 @@
 .footer-section {
   padding-top: 50px;
   padding-bottom: 50px;
-
+  @include mq("tablet", "max") {
+    justify-content: center;
+    align-items: center;
+  }
   img {
     max-height: 50px;
   }

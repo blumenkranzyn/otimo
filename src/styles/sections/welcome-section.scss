@@ -1,6 +1,13 @@
 .welcome-section {
   z-index: 6;
   background: linear-gradient(to left, #297a94, $blue-base);
+  @media only screen and (max-width: 599px) {
+    padding-top: 8vh;
+    padding-bottom: 10vh;
+    img {
+      display: none;
+    }
+  }
   &::after {
     @include pseudo;
     height: 100%;
