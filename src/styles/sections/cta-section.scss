@@ -4,11 +4,10 @@
   padding-top: 15vh;
   padding-bottom: 25vh;
   background: url(../../images/bgs/bg-fraudes.jpg);
-  background-position: center center;
+  background-position: top center;
   background-size: cover;
   background-attachment: fixed;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-
   color: white;
   & > * {
     text-transform: uppercase;

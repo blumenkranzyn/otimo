@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Fab } from "@material-ui/core"
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import Fade from 'react-reveal/Fade';
 
 const ScrollButton = ({ scrollStepInPx }) => {
 
@@ -13,6 +14,7 @@ const ScrollButton = ({ scrollStepInPx }) => {
         }
     }
     return (
+
         <Fab id="goTop" color="primary" aria-label="Back to Top" onClick={() => scrollToTop()} className="go-top">
             <ExpandLessIcon />
         </Fab>

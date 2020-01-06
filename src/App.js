@@ -44,7 +44,7 @@ function App() {
       <CTA />
       <Contact />
       <Footer />
-      <ScrollButton scrollStepInPx="0" delayInMs="16.66" />
+      <ScrollButton scrollStepInPx="0" />
     </ThemeProvider>
   );
 }

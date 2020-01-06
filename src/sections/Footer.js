@@ -1,6 +1,6 @@
 import React from "react"
 import { Grid, Hidden, Typography } from "@material-ui/core"
-import { Fade } from "react-reveal"
+import { Zoom } from "react-reveal"
 
 
 
@@ -16,10 +16,14 @@ const Footer = () => {
             <section className="footer-section">
                 <Grid container direction="row" alignItems="center" justify="space-between">
                     <Grid item>
-                        <img src={images.logoOtimo} alt="Otimo - Sociedade de Crédito Direto" />
+                        <Zoom left delay={900}>
+                            <img src={images.logoOtimo} alt="Otimo - Sociedade de Crédito Direto" />
+                        </Zoom>
                     </Grid>
                     <Grid item>
-                        <img src={images.logoBancoCentral} alt="Banco Central do Brasil" />
+                        <Zoom right delay={900}>
+                            <img src={images.logoBancoCentral} alt="Banco Central do Brasil" />
+                        </Zoom>
                     </Grid>
                 </Grid>
             </section>
